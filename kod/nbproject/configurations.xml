@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="guide" displayName="guide" projectFiles="true">
+      <logicalFolder name="dist" displayName="dist" projectFiles="true">
+        <logicalFolder name="Debug" displayName="Debug" projectFiles="true">
+          <logicalFolder name="GNU-Linux-x86"
+                         displayName="GNU-Linux-x86"
+                         projectFiles="true">
+            <itemPath>/home/dominik/Plocha/guide/dist/Debug/GNU-Linux-x86/guide</itemPath>
+            <itemPath>/home/dominik/Plocha/guide/dist/Debug/GNU-Linux-x86/robot_controll</itemPath>
+          </logicalFolder>
+        </logicalFolder>
+      </logicalFolder>
+      <logicalFolder name="rapidxml-1.13"
+                     displayName="rapidxml-1.13"
+                     projectFiles="true">
+        <itemPath>/home/dominik/Plocha/guide/rapidxml-1.13/license.txt</itemPath>
+        <itemPath>/home/dominik/Plocha/guide/rapidxml-1.13/manual.html</itemPath>
+        <itemPath>/home/dominik/Plocha/guide/rapidxml-1.13/rapidxml.hpp</itemPath>
+        <itemPath>/home/dominik/Plocha/guide/rapidxml-1.13/rapidxml_iterators.hpp</itemPath>
+        <itemPath>/home/dominik/Plocha/guide/rapidxml-1.13/rapidxml_print.hpp</itemPath>
+        <itemPath>/home/dominik/Plocha/guide/rapidxml-1.13/rapidxml_utils.hpp</itemPath>
+      </logicalFolder>
+      <itemPath>/home/dominik/Plocha/guide/EvalDireciton.h</itemPath>
+      <itemPath>/home/dominik/Plocha/guide/GpsThread.h</itemPath>
+      <itemPath>/home/dominik/Plocha/guide/LocalizationAndPlaning.h</itemPath>
+      <itemPath>/home/dominik/Plocha/guide/Makefile</itemPath>
+      <itemPath>/home/dominik/Plocha/guide/result.svg</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>BindSerialPorts.h</itemPath>
+      <itemPath>DataTypes.h</itemPath>
+      <itemPath>ImuThread.h</itemPath>
+      <itemPath>Jazda.h</itemPath>
+      <itemPath>SbotThread.h</itemPath>
+      <itemPath>oneLine.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>BindSerialPorts.cpp</itemPath>
+      <itemPath>ImuThread.cpp</itemPath>
+      <itemPath>Jazda.cpp</itemPath>
+      <itemPath>SbotThread.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>oneLine.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>../../../dominik/Plocha/guide</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <commandlineTool>g++</commandlineTool>
+          <incDir>
+            <pElem>../rapidxml-1.13</pElem>
+            <pElem>/usr/include/opencv</pElem>
+            <pElem>/usr/local/include/opencv2</pElem>
+          </incDir>
+        </ccTool>
+        <linkerTool>
+          <linkerAddLib>
+            <pElem>/usr/lib/i386-linux-gnu</pElem>
+            <pElem>/usr/local/include/opencv2</pElem>
+            <pElem>/usr/local/include/opencv</pElem>
+          </linkerAddLib>
+          <linkerLibItems>
+            <linkerLibLibItem>opencv_core</linkerLibLibItem>
+            <linkerLibLibItem>opencv_highgui</linkerLibLibItem>
+            <linkerLibLibItem>opencv_ml</linkerLibLibItem>
+            <linkerLibLibItem>pthread</linkerLibLibItem>
+            <linkerLibLibItem>opencv_imgproc</linkerLibLibItem>
+            <linkerLibLibItem>opencv_legacy</linkerLibLibItem>
+            <linkerLibLibItem>opencv_objdetect</linkerLibLibItem>
+          </linkerLibItems>
+        </linkerTool>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>GNU|GNU</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>
